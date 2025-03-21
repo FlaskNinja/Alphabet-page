@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>Alphabet - Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Alphabet</h1>
+        <h3>Sign Up</h3> <br>  
+        <form method="POST">
+            <div class="flash">
+                {% for message in get_flashed_messages() %}
+                <div class="alert alert-warning">
+                    <button type="button" class="close" data-dismiss="alert">&times;</button>
+                    {{ message }}
+                </div>
+                {% endfor %}
+               </div> <br>
+            <input type="text" name="firstname" placeholder="Name e.g John" required>
+            <input type="text" name="surname" placeholder="Surname e.g Doe" required>
+            <input type="password" name="password" placeholder="Your password" required>
+            <input type="email" name="email" placeholder="Email e.g: Johndoe@gmail.com" required>
+            <button type="submit">Submit</button>
+        </form><br>
+        <a href="{{url_for('log_in')}}">Already have an account? Log in</a>
+    </div>
+</body>
+</html>

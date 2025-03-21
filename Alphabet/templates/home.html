@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{url_for('static', filename='main.css')}}">
+    <title>Alphabet - home</title>
+</head>
+<body>  
+    <h1 class="welcome-user">Welcome back {{name}} to 
+        <span class="a">Al</span><span class="p">pha</span><span class="b">bet</span>
+    </h1> <hr>
+    <div class="nav-wrapper">
+        <nav class="list">
+            <a class="main-link" href="#">Home</a>
+            <a class="main-link" href="#">About</a>
+            <a class="main-link" href="#">Contact</a>
+            <a class="main-link" href="#" class="dropdown">services</a>
+        </nav>
+    </div>
+    <div class="what-we-do">
+        <p> <strong>What we do...</strong> </p>  
+        <div class="our-services">
+            <p class="service">
+                We offer intesive and good facilities that can transform your everyday life
+            </p>
+            <p class="service">
+                We offer intesive and good facilities that can transform your everyday life
+            </p>
+            <p class="service">
+                We offer intesive and good facilities that can transform your everyday life
+            </p>
+        </div> 
+        {{users.email}}
+    </div>
+</body>
+</html>

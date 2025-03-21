@@ -1,0 +1,140 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #000;
+}
+.container{
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1)
+}
+
+h1, h2{
+    text-align: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #0056b3;
+}
+
+.task{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+.flash{
+    background-color: sandybrown;
+}
+
+a{
+    text-decoration: none;
+    color: blue;
+}
+
+.welcome-user{
+    text-align: left;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.a{
+    color: red;
+}
+.p{
+    color: green;
+}
+.b{
+    color: blue;
+}
+
+.service{
+    border: 1px solid blue;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.our-services{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-evenly;
+}
+
+.what-we-do{
+    background-color: white;
+    margin-top: 30px;
+    padding: 35px 35px 15px 35px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container{
+        justify-items: center;
+        background-color: red;
+    }
+}
+
+
+a.main-link{
+    text-decoration: none;
+    color: black;
+    margin-left: 150px;
+    display: block;
+    float: left;
+    padding:16px 5px 16px 5px;  
+}
+nav{
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+}
+.nav-wrapper{
+    color: darkblue;
+    overflow: hidden;
+}
+
+strong{
+    font-family: cursive;
+    font-size: 30px;
+}
+
+a.main-link:hover{
+    color: blue;
+    background-color: white;
+    transition: 0.3ms;
+}
+
+.service:hover{
+    color: black;
+    background-color: lightblue;
+    border: 2px solid darkblue;
+    transition: 0.3ms;
+}
